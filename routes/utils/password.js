@@ -12,7 +12,7 @@ export const hashPassword=async (password)=>{
 
 }
 
-export const comparePassword=async(hPsssword,password)=>{
+export const comparePassword=async(password,hPsssword)=>{
   console.log(password,hPsssword)
   try {
     const result=await bcryptjs.compare(password,hPsssword)
